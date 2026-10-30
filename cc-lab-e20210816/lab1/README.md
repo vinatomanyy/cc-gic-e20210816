@@ -13,23 +13,23 @@ Copy this template to `cc-lab-YOUR_ID/lab1/README.md` in your own repository. Fo
 
 ### Security group
 
-![Security group inbound rules](images/01-security-group.png)
+![Security group inbound rules](images/1-security-group.png)
 
 ### Key pair
 
-![Key pair](images/02-key-pair.png)
+![Key pair](images/2-key-pair.png)
 
 ### Instance details
 
-![Instance details](images/03-instance-details.png)
+![Instance details](images/3-instance-details.png)
 
 ### Browser test
 
-![Browser test](images/04-browser-test.png)
+![Browser test](images/4-browser-test.png)
 
 ### SSH connection
 
-![SSH connection](images/05-ssh-connection.png)
+![SSH connection](images/5-ssh-connection.png)
 
 Did you connect with your own SSH client or with EC2 Instance Connect?
 own SSH client
@@ -39,19 +39,19 @@ own SSH client
 
 ### Launch configuration
 
-![Launch configuration](images/06-challenge-launch.png)
+![Launch configuration](images/6-challenge-launch.png)
 
 ### Security group
 
-![Challenge security group](images/07-challenge-security-group.png)
+![Challenge security group](images/7-challenge-security-group.png)
 
 ### Running instance
 
-![Challenge instance](images/08-challenge-instance.png)
+![Challenge instance](images/8-challenge-instance.png)
 
 ### Commands on the instance
 
-![Terminal commands](images/09-challenge-terminal.png)
+![Terminal commands](images/9-challenge-terminal.png)
 
 Paste the commands you ran to install the web server and create `index.html`:
 
