@@ -32,8 +32,8 @@ Copy this template to `cc-lab-YOUR_ID/lab1/README.md` in your own repository. Fo
 ![SSH connection](images/5-ssh-connection.png)
 
 Did you connect with your own SSH client or with EC2 Instance Connect?
-own SSH client
 ---
+**Answer**: I connect with my own ssh client via private key.
 
 ## Part 1.2 — EC2 Web Solution (Challenge)
 
@@ -72,13 +72,20 @@ echo "Welcome to the EC2 Challenge" | sudo tee /usr/share/nginx/html/index.html
 ## Questions
 
 1. Your security group has an SSH rule and an HTTP rule. What does each one let you do? What would stop working if you deleted the HTTP rule?
-**Answer**: Each allow access to the port of SSH and HTTP. If u deleted the HTTP rule then u cant access via HTTP anymore only SSH still works. 
+
+    **Answer**: Each allow access to the port of SSH(port 22) to remote terminal access and HTTP(port 80) let browser load the web page. If u deleted the HTTP rule then the web page stop loading anymore only SSH still works. 
+
 2. In Part 1.1 you never logged in to install the web server. What installed it, and when did it run?
-**Answer**: Script run at launch when entering the userdata in dashboard. It run on startup.
+
+    **Answer**: Script run at launch when entering command in the userdata section in dashboard. It's bootstrap so it ran once on first boot.
+
 3. Why does the web page open with `http://` but not with `https://`?
-**Answer**: Because we only allow access to port HTTP, further more we need an SSL certificate to use HTTPS.
+   
+    **Answer**: Because we only allow access to port 80 HTTP, HTTPS need port 443 plus we need an SSL certificate to use HTTPS.
+
 4. Part 1.2 asked for a 10 GiB root volume. Where in the launch settings did you set it, and how can you check the size on the running instance?
-**Answer**: Storage settings when launching instance. Can check in instance detail.
+   
+    **Answer**: I set it in the instance details when launching instance. To check it, open the instance storage's tab in console or run 'lsblk' on the instance.
 
 ## Problems and how I solved them (optional)
 
@@ -88,5 +95,5 @@ One suggestion an AI tool gave you and how you checked it.
 
 ## Clean up
 
-- [ ] Part 1.1: instance terminated, key pair and security group deleted.
-- [ ] Part 1.2: instance terminated, security group (and key pair, if any) deleted.
+- [x] Part 1.1: instance terminated, key pair and security group deleted.
+- [x] Part 1.2: instance terminated, security group (and key pair, if any) deleted.
