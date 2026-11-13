@@ -28,6 +28,9 @@ Copy this template to `cc-lab-YOUR_ID/lab3-challenge/README.md` in your own repo
 
 My policy is in [bucket-policy.json](bucket-policy.json). Explain which line limits public access to the `public/` folder:
 
+**Answer**: line 9 '"Resource": "arn:aws:s3:::clab-datastore-661/public/*"',
+ The policy's "Principal": "*" (anyone) and "Action": "s3:GetObject" (read files) apply only to objects matching that path.
+
 ## 4. Versioning
 
 ![Versioning enabled](images/04-versioning.png)
